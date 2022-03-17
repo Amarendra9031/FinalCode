@@ -8,6 +8,8 @@
     <classes>
       <class name="com.crm.ContactTests.CreateContactWithOrgTest"/>
       <class name="com.crm.ContactTests.CreateContactsTest"/>
+
+
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
