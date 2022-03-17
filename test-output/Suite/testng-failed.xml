@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test-Runner-firefox(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="com.crm.OrganizationTests.CreateOrgTest">
+        <methods>
+          <include name="createOrgTest"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrgTest -->
+      <class name="com.crm.OrganizationTests.CreateOrganWithIndTypeAndTypeTest">
+        <methods>
+          <include name="createOrganWithIndTypeAndTypeTest" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrganWithIndTypeAndTypeTest -->
+    </classes>
+  </test> <!-- Test-Runner-firefox(failed) -->
+  <test thread-count="2" parallel="tests" name="Test-Runner-Chrome(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="com.crm.OrganizationTests.CreateOrgTest">
+        <methods>
+          <include name="createOrgTest"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrgTest -->
+      <class name="com.crm.OrganizationTests.CreateOrganWithIndTypeAndTypeTest">
+        <methods>
+          <include name="createOrganWithIndTypeAndTypeTest" invocation-numbers="0 1 2 3 4 5 6 7"/>
+        </methods>
+      </class> <!-- com.crm.OrganizationTests.CreateOrganWithIndTypeAndTypeTest -->
+    </classes>
+  </test> <!-- Test-Runner-Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->
